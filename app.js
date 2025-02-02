@@ -10,7 +10,7 @@ function esNombreValido(nombre) {
     }
 
     // Verificar caracteres permitidos (solo letras y espacios)
-    if (!/^[a-zA-Z\s]+$/.test(nombre)) {
+    if (!/^[a-zA-Z\u00C0-\u017F\u00F1\u00D1\s]+$/.test(nombre)) {
         return false;
     }
 
